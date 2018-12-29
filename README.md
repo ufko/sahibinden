@@ -24,7 +24,7 @@ Execute CodeceptJS run command
 
 ### Prerequisites
 
-In order to run the tests following are required:
+In order to run the tests the following are required:
 
 * Node.js version 8.9 or higher (To install https://nodejs.org/en/download/package-manager/)
 * CodeceptJS with Puppeteer as helper (To install https://codecept.io/installation/)
@@ -44,4 +44,4 @@ npm install codeceptjs puppeteer --save-dev
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
