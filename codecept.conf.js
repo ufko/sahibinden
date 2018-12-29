@@ -1,5 +1,4 @@
 exports.config = {
-  tests: './*_test.js',
   output: './output',
   helpers: {
     Puppeteer: {
@@ -7,9 +6,19 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    homePage: './pages/Home.js'
   },
-  bootstrap: null,
   mocha: {},
+  bootstrap: null,
+  teardown: null,
+  hooks: [],
+  gherkin: {},
+  plugins: {
+    screenshotOnFail: {
+      enabled: true
+    }
+  },
+  tests: './*_test.js',
   name: 'sahibinden'
 }
