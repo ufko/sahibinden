@@ -4,11 +4,11 @@ Feature('sahibinden.com Home Page Search ');
 const assert = require('assert');
 
 let motorcycleModelCounts = new DataTable(['model', 'count']);
-motorcycleModelCounts.add(['Yamaha MT07', 59]);
-motorcycleModelCounts.add(['Yamaha MT09', 13]);
-motorcycleModelCounts.add(['Yamaha MT25', 58]);
+motorcycleModelCounts.add(['Yamaha MT07', 61]);
+motorcycleModelCounts.add(['Yamaha MT09', 18]);
+motorcycleModelCounts.add(['Yamaha MT25', 55]);
 
-Data(motorcycleModelCounts).Scenario('Search Result Count', async (I, current) => {
+Data(motorcycleModelCounts).Scenario('Result count for search by model matches given', async (I, current) => {
     I.amOnPage('https://www.sahibinden.com');
     I.fillField('#searchText', current.model);
     I.pressKey('Enter');

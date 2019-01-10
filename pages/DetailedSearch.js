@@ -4,7 +4,8 @@ const I = actor();
 module.exports = {
 
     locators: {
-        category: '//div[contains(@class, \'category-list-wrapper\')]//ul/li/span[contains(text(), '
+        category: '//div[contains(@class, \'category-list-wrapper\')]//ul/li/span[contains(text(), ',
+        inputPlaceholder: '//input[contains(@placeholder, '
     },
 
     clickCategories(categories) {
@@ -14,9 +15,9 @@ module.exports = {
         }
     },
 
-    fillYearFileds(minYear, maxYear) {
-        I.fillField({xpath:'//input[contains(@placeholder, \'Min Yıl\')]'}, minYear);
-        I.fillField({xpath:'//input[contains(@placeholder, \'Max Yıl\')]'}, maxYear);
+    fillYearFields(minYear, maxYear) {
+        I.fillField({xpath:this.locators.inputPlaceholder + '\'Min Yıl\')]'}, minYear);
+        I.fillField({xpath:this.locators.inputPlaceholder + '\'Max Yıl\')]'}, maxYear);
     }
 };
 
