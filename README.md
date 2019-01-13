@@ -18,12 +18,12 @@ First install the setup script and execute it. The setup script will install Nod
 
 ##### On macOS
 ```
-wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_macos.sh && chmod +x setup_macos.sh && ./setup_macos.sh
+wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_scripts/setup_macos.sh && chmod +x setup_macos.sh && ./setup_macos.sh
 ```
 ##### On Ubuntu
 
 ```
-wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_ubuntu.sh && chmod +x setup_ubuntu.sh && ./setup_ubuntu.sh
+wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_scripts/setup_ubuntu.sh && chmod +x setup_ubuntu.sh && ./setup_ubuntu.sh
 ```
 
 Then change the directory and run tests
@@ -40,13 +40,13 @@ First install the setup script and execute it. The setup script will install Nod
 ##### On macOS
 
 ```
-wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_macos_docker.sh && chmod +x setup_macos_docker.sh && ./setup_macos_docker.sh
+wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_scripts/setup_macos_docker.sh && chmod +x setup_macos_docker.sh && ./setup_macos_docker.sh
 ```
 
 ##### On Ubuntu
 
 ```
-wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_ubuntu_docker.sh && chmod +x setup_ubuntu_docker.sh && ./setup_ubuntu_docker.sh
+wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_scripts/setup_ubuntu_docker.sh && chmod +x setup_ubuntu_docker.sh && ./setup_ubuntu_docker.sh
 ```
 Then mount CodeceptJS config directory into the tests directory and run tests
 
