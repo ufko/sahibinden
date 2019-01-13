@@ -1,0 +1,24 @@
+{
+  "name": "sahibinden",
+  "version": "1.0.0",
+  "description": "End to end tests for sahibinden.com with CodeceptJS.",
+  "main": "codecept.conf.js",
+  "scripts": {
+    "start": "../node_modules/.bin/codeceptjs run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufko/sahibinden.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ufko/sahibinden/issues"
+  },
+  "homepage": "https://github.com/ufko/sahibinden#readme",
+  "dependencies": {
+    "puppeteer": "1.11.0",
+    "codeceptjs": "2.0.3",
+    "node": "11.6.0"
+  }
+}
