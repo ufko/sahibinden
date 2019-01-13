@@ -6,7 +6,7 @@ Scenario('Detailed search displays not found message when a result doesn\'t exis
     I.click('Detaylı Arama');
     let categories = ['Vasıta', 'Motosiklet', 'Yamaha', 'MT-07 ABS'];
     detailedSearchPage.clickCategories(categories);
-    detailedSearchPage.fillYearFileds('1998', '1999');
+    detailedSearchPage.fillYearFields('1998', '1999');
     I.wait(2);
     let securityOptions = ['Çekiş Kontrolü'];
     detailedSearchPage.checkSecurityOptions(securityOptions);
