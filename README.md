@@ -61,7 +61,7 @@ So when entering *codecept.conf.js* path make sure the path is known to docker a
 
 **Example paths**
 
-/Users/<<user-name>>/sahibinden
+/Users/{user-name}/sahibinden
 
 If repository is cloned to home
  
