@@ -8,7 +8,7 @@ This project provides tests to make sure home page contains certain elements, an
 Requires 
 - CodeceptJS v2+
 - Node JS v8.9+
-- Puppeteer
+- Puppeteer v1.11.0
 
 ### Installation
 
