@@ -4,44 +4,36 @@ contains certain elements, and search and detailed search features work.
 
 ## Getting Started
 
-Get a copy of the project
+#### On Ubuntu
+
+To run without docker
 
 ```
-git clone https://github.com/ufko/sahibinden.git
-```
-Change directory to project folder
-
-```
-cd <path-to-project-folder>
+wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_ubuntu.sh && chmod +x setup_ubuntu.sh && ./setup_ubuntu.sh
 ```
 
+The setup_ubuntu.sh will install nodejs, npm, git, codeceptjs, puppeteer and clone the repo.
 
-Execute CodeceptJS run command
-
-```
-<path-to-codeceptjs> run --steps
-```
-
-### Prerequisites
-
-In order to run the tests the following are required:
-
-* Node.js version 8.9 or higher (To install https://nodejs.org/en/download/package-manager/)
-* CodeceptJS with Puppeteer as helper (To install https://codecept.io/installation/)
-
-### Installing
-
-To install Node.js on Ubuntu
+Then
 
 ```
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash - && sudo apt-get install -y nodejs
+cd sahibinden && npm start
+```
+##
+
+To run with docker
+
+```
+wget https://raw.githubusercontent.com/ufko/sahibinden/master/setup_ubuntu_docker.sh && chmod +x setup_ubuntu_docker.sh && ./setup_ubuntu_docker.sh
 ```
 
-To install CodeceptJS with Puppeteer:
-```
-npm install codeceptjs puppeteer --save-dev
-```
+The setup_ubuntu_docker.sh will install nodejs, npm, git, docker community edition, codeceptjs docker image and clone the repo.
 
+After setup script finishes execution
+
+```
+sudo docker run --net=host -v <path-to-codecept.conf.js>:/tests codeception/codeceptjs codeceptjs run
+```
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
