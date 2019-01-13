@@ -2,7 +2,10 @@ exports.config = {
   output: './output',
   helpers: {
     Puppeteer: {
-      url: 'http://localhost'
+      chrome:{
+        args: ["--no-sandbox"]
+      },
+      url: 'http://www.sahibinden.com',
     }
   },
   include: {
@@ -17,9 +20,9 @@ exports.config = {
   gherkin: {},
   plugins: {
     screenshotOnFail: {
-      enabled: true
+      enabled: false
     }
   },
-  tests: './*_test.js',
+  tests: './tests/*_test.js',
   name: 'sahibinden'
-}
+};
