@@ -14,7 +14,7 @@ module.exports = {
         }
     },
 
-    fillYearFileds(minYear, maxYear) {
+    fillYearFields(minYear, maxYear) {
         I.fillField({css:'input[placeholder*=\'Min Yıl\']'}, minYear);
         I.fillField({css:'input[placeholder*=\'Max Yıl\']'}, maxYear);
     },
