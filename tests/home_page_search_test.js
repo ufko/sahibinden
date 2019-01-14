@@ -13,7 +13,7 @@ motorcycleModelCounts.add(['Yamaha MT09', 16]);
 motorcycleModelCounts.add(['Yamaha MT25', 55]);
 motorcycleModelCounts.add(['Yamaha MT07', 58]);
 
-Data(motorcycleModelCounts).Scenario('Search Result Count', async (I, current) => {
+Data(motorcycleModelCounts).Scenario('Search result count matches given when searched by model', async (I, current) => {
     I.amOnPage('https://www.sahibinden.com');
     I.fillField('#searchText', current.model);
     I.pressKey('Enter');
